@@ -1,0 +1,17 @@
+{
+  "name": "try-web",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "cacheFrom": "ghcr.io/nmemoto/try-web"
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/python:1": {
+        "version": "latest",
+        "installJupyterlab": true
+    },
+    "ghcr.io/devcontainers/features/node:1": {
+        "version": "latest"
+    }
+  },
+  "remoteUser": "vscode"
+}
