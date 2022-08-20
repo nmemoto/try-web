@@ -15,7 +15,7 @@
       writing-mode: vertical-rl;
       margin: 0%;
     }
-    a:hover{
+    a:hover {
       cursor: pointer;
     }
   </style>
@@ -25,7 +25,7 @@
       let kanaList = document.getElementsByTagName("a");
       kanaList = Array.prototype.slice.call(kanaList);
       kanaList.forEach((kana, index) =>
-      kana.addEventListener("click", function () {
+        kana.addEventListener("click", function () {
           console.log(`${kana.textContent}`);
           const utterThis = new SpeechSynthesisUtterance(kana.textContent);
           utterThis.onend = function (event) {
